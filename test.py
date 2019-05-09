@@ -13,10 +13,11 @@ driver = webdriver.PhantomJS(phantom_driver)
 if len(sys.argv) > 1:
 	target_site = sys.argv[1]
 else:
-	# Default to hardcoded path when user hasn't specified a target URL
-	target_site = "https://s3.eu-west-2.amazonaws.com/lohanlon-bucket/index.html"
+	# Default target URL
+	target_site = "https://calculator.demo.mozaicdemo.cloud"
 print('\n Target ==> %s\n' % target_site)
 
+# Exits without error status
 def exit():
 	sys.exit(0)
 
