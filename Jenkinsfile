@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Test') {
 			steps {
-				sh 'calculator-test.sh $ENVIRONMENT'
+				sh './calculator-test.sh $ENVIRONMENT'
 			}
 		}
 	}
